@@ -29,7 +29,7 @@
 
 %%
 
-\fancyhead[L]{\footnotesize Уравнения математической физики}
+\fancyhead[L]{\footnotesize Математика I}
 \fancyhead[RO]{Последняя компиляция: \today }
 \fancyfoot[R]{\thepage}
 \fancyfoot[C]{}
@@ -133,9 +133,28 @@
 				\int \frac{d x}{x^{4}+x^{2}+1}=\int \frac{\frac{1}{2}\left(x^{2}+1\right)-\frac{1}{2}\left(x^{2}-1\right)}{x^{4}+x^{2} + \frac{1}{2}\left(x^{3}+1\right)-\frac{1}{2}\left(x^{3}-1\right)} d x =\\ \frac{1}{2} \int \frac{x^{2}+1}{x^4+x^2+\frac{1}{2}\left(x^3+1\right)-\frac{1}{2}\left(x^3-1\right)} -
 				\frac{1}{2} \int \frac{x^{2}-1}{x^4+x^2+\frac{1}{2}\left(x^3+1\right)-\frac{1}{2}\left(x^3-1\right)} \\
 				=\left|u=x-\frac{1}{x}, \quad v=x+\frac{1}{x} \quad  d u = \left(1+\frac{1}{x^2}\right) d x \quad d v = \left(1-\frac{1}{x^2}\right) d x\right| =\\
-				\frac{1}{2} \int \frac{du}{u^2+3}+ \frac{1}{2} \int \frac{dv}{v^2-1}=\frac{1}{4} \ln \frac{x^{2}+x+1}{x^{2}-x+1}+\frac{1}{2 \sqrt{3}} \operatorname{arctg} \frac{x^{2}-1}{x \sqrt{3}}	
+				\frac{1}{2} \int \frac{du}{u^2+3} - \frac{1}{2} \int \frac{dv}{v^2-1}=\frac{1}{4} \ln \frac{x^{2}+x+1}{x^{2}-x+1}+\frac{1}{2 \sqrt{3}} \operatorname{arctg} \frac{x^{2}-1}{x \sqrt{3}}	
 			\end{aligned}
 			$$
+		\item 
+			$$
+			\begin{aligned}
+			\int \frac{1}{x^{n}+1} d x=-\frac{1}{n} \sum_{k=1}^{n} x_{k} \log \left(x-x_{k}\right)+C \\
+			f(x)=\frac{1}{x^{n}+1} \quad f(x)=\prod_{k=1}^{n}\left(x-x_{k}\right)^{-1} 
+		    \quad x_{k}=e^{i(2 k-1) \pi / n}, k=1, \cdots, n \\
+			f(x)=\sum_{k=1}^{n} a_{k}\left(x-x_{k}\right)^{-1} 
+			\quad a_{k}=\frac{-x_{k}}{n}
+			\quad
+			\int \frac{1}{x^{n}+1} d x=-\frac{1}{n} \sum_{k=1}^{n} x_{k} \log \left(x-x_{k}\right)+C\\
+			\int \frac{1}{x^{n}+1} d x=-\frac{1}{n} \sum_{k=1}^{n}\left(\frac{1}{2} x_{k r} \log \left(x^{2}-2 x_{k r} x+1\right)-x_{k i} \arctan \left(\frac{x-x_{k r}}{x_{k i}}\right)\right)+C^{\prime}
+			\end{aligned}
+			$$	
+			
+			$$
+			\begin{array}{l}{x_{k r}=\operatorname{Re}\left(x_{k}\right)=\cos \left(\frac{(2 k-1) \pi}{n}\right)} \\ {x_{k i}=\operatorname{Im}\left(x_{k}\right)=\sin \left(\frac{(2 k-1) \pi}{n}\right)}\end{array}
+			$$
+			\section{Задачи с Теорминимума}			
+			\input{problems.tex}
 	\end{enumerate}
 	
 

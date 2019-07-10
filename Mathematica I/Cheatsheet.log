@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.2)  10 JUL 2019 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.2)  10 JUL 2019 18:46
 entering extended mode
 **./Cheatsheet.tex
 (Cheatsheet.tex
@@ -1189,7 +1189,10 @@ LaTeX Warning: No \author given.
 [1
 
 {C:/Users/serge/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
+(problems.tex
+Overfull \hbox (13.50645pt too wide) detected at line 22
+[][]
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1197,23 +1200,25 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
+[2])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (Cheatsheet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `Cheatsheet.out' has not changed.
-(rerunfilecheck)             Checksum: 5D2C0D9B83FCCB800D9A32C27C10DAEF;1161.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+(rerunfilecheck)             Checksum: 57CC0A92E8608BE80DD1E96C85D4A8C2;1373.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 23846 strings out of 492895
- 384402 string characters out of 3133480
- 471804 words of memory out of 3000000
- 27454 multiletter control sequences out of 15000+200000
+ 23854 strings out of 492895
+ 384543 string characters out of 3133480
+ 476728 words of memory out of 3000000
+ 27455 multiletter control sequences out of 15000+200000
  551552 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,10n,68p,1045b,441s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,11n,68p,1045b,464s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 rm1000.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
 pi600\labx1200.pk> <C:\Users\serge\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
@@ -1229,9 +1234,9 @@ c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Cheatsheet.pdf (2 pages, 144741 bytes).
+Output written on Cheatsheet.pdf (3 pages, 155926 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
