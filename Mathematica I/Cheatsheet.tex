@@ -25,6 +25,7 @@
 \usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
 
 %% Теоремы
+\newtheorem{lemma}{Пример}
 
 %%
 
@@ -102,5 +103,45 @@
 	\frac{\varphi(x)}{\psi(x)}=\sum_{k=1}^{n} \frac{\varphi\left(a_{k}\right)}{\psi^{\prime}\left(a_{k}\right)} \frac{1}{x-a_{k}}
 	$$
 	Где $a_{1}, a_{2} \dots \ldots a_{n} -$ корни полинома $ \psi(x) $.
+	
+	\subsection{Полезные замены:}
+	\begin{enumerate}
+		\item
+		Дробно-линейная подстановка
+		\[
+		\frac{x-a}{x-b}=t
+		\]
+		\item
+		Если подыинтегральное выражение содержит множители $x^{2}-1$ и $x^{2}+1$, а также возвратные полиномы:
+		\[
+		x+\frac{1}{x}=u \quad \text{и} \quad x-\frac{1}{x}=v
+		\]
+		
+		\item
+		Иногда полезно дополнять выражения до уже знакомых, путём представления констант в виде тождественных выражений.
+		$$1=\frac{1}{2}\left(x^{3}+1\right)-\frac{1}{2}\left(x^{3}-1\right), \quad 1=\frac{1}{2}\left(x^{2}+1\right)-\frac{1}{2}\left(x^{2}-1\right)$$
+		\begin{lemma}
+			$\int \frac{d x}{x^{4}+x^{2}+1}$
+		\end{lemma}	
+		
+	\end{enumerate}
+	\subsection{Некоторые содержательные примеры}
+	\begin{enumerate}
+		\item
+			$$
+			\begin{aligned}
+				\int \frac{d x}{x^{4}+x^{2}+1}=\int \frac{\frac{1}{2}\left(x^{2}+1\right)-\frac{1}{2}\left(x^{2}-1\right)}{x^{4}+x^{2} + \frac{1}{2}\left(x^{3}+1\right)-\frac{1}{2}\left(x^{3}-1\right)} d x =\\ \frac{1}{2} \int \frac{x^{2}+1}{x^4+x^2+\frac{1}{2}\left(x^3+1\right)-\frac{1}{2}\left(x^3-1\right)} -
+				\frac{1}{2} \int \frac{x^{2}-1}{x^4+x^2+\frac{1}{2}\left(x^3+1\right)-\frac{1}{2}\left(x^3-1\right)} \\
+				=\left|u=x-\frac{1}{x}, \quad v=x+\frac{1}{x} \quad  d u = \left(1+\frac{1}{x^2}\right) d x \quad d v = \left(1-\frac{1}{x^2}\right) d x\right| =\\
+				\frac{1}{2} \int \frac{du}{u^2+3}+ \frac{1}{2} \int \frac{dv}{v^2-1}=\frac{1}{4} \ln \frac{x^{2}+x+1}{x^{2}-x+1}+\frac{1}{2 \sqrt{3}} \operatorname{arctg} \frac{x^{2}-1}{x \sqrt{3}}	
+			\end{aligned}
+			$$
+	\end{enumerate}
+	
+
+
+
+	\section{Интегрирование иррациональных функций}
+
 	
 \end{document} % конец документа
